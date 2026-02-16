@@ -1,65 +1,107 @@
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AmbitionProfile | Cognitive Risk Intelligence for Insurance</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 300;
-        color: #1D312C;
-        background-color: #FFFFFF;
-        -webkit-font-smoothing: antialiased;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AmbitionProfile | Cognitive Risk Intelligence for Insurance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300;1,700&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      color: #1D312C;
+      background-color: #FFFFFF;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      line-height: 1.2;
+    }
+
+    .bg-primary {
+      background-color: #FBF4A1;
+    }
+
+    .text-primary {
+      color: #1D312C;
+    }
+
+    .bg-secondary {
+      background-color: #1D312C;
+    }
+
+    .text-secondary {
+      color: #1D312C;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Scale mapping */
+    .text-h0 {
+      font-size: 3.5rem;
+    }
+
+    /* ~56px / 40ptish */
+    .text-h1 {
+      font-size: 2.5rem;
+    }
+
+    /* ~40px / 30ptish */
+    .text-h2 {
+      font-size: 1.75rem;
+    }
+
+    /* ~28px / 20ptish */
+
+    .bg-neutral {
+      background-color: #C4BCBB;
+    }
+
+    .bg-accent {
+      background-color: #C28DBF;
+    }
+
+    .bg-success {
+      background-color: #DBE8AB;
+    }
+
+    @media (max-width: 768px) {
+      .text-h0 {
+        font-size: 2.5rem;
       }
-      h1, h2, h3, h4, h5, h6 {
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        line-height: 1.2;
+
+      .text-h1 {
+        font-size: 2rem;
       }
-      .bg-primary { background-color: #FBF4A1; }
-      .text-primary { color: #1D312C; }
-      .bg-secondary { background-color: #1D312C; }
-      .text-secondary { color: #1D312C; }
-      
-      .reveal {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 0.8s ease-out;
-      }
-      .reveal.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      
-      /* Scale mapping */
-      .text-h0 { font-size: 3.5rem; } /* ~56px / 40ptish */
-      .text-h1 { font-size: 2.5rem; } /* ~40px / 30ptish */
-      .text-h2 { font-size: 1.75rem; } /* ~28px / 20ptish */
-      
-      @media (max-width: 768px) {
-        .text-h0 { font-size: 2.5rem; }
-        .text-h1 { font-size: 2rem; }
-      }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.564.0"
-  }
-}
-</script>
+    }
+  </style>
 </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
 </html>

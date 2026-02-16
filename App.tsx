@@ -1,12 +1,12 @@
 
 import React, { useEffect, useRef } from 'react';
 import { BrandLogo, GIABadge, BrandMark } from './constants';
-import { 
-  ShieldCheck, 
-  Activity, 
-  BrainCircuit, 
-  Zap, 
-  BarChart3, 
+import {
+  ShieldCheck,
+  Activity,
+  BrainCircuit,
+  Zap,
+  BarChart3,
   Database,
   ArrowRight,
   CheckCircle2,
@@ -32,7 +32,7 @@ const useReveal = () => {
 
 const Header: React.FC = () => (
   <header className="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100 py-5 px-6 md:px-12 flex justify-between items-center">
-    <BrandLogo className="h-9" />
+    <BrandLogo className="h-8 scale-[4] origin-left ml-8" />
     <nav className="hidden md:flex gap-10 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500">
       <a href="#insight" className="hover:text-secondary transition-colors">Insight</a>
       <a href="#product" className="hover:text-secondary transition-colors">Product</a>
@@ -64,7 +64,7 @@ const Hero: React.FC = () => (
         <p className="text-xl md:text-2xl text-gray-500 mb-12 max-w-2xl font-light leading-relaxed">
           A psychometric layer for commercial auto — designed to complement telematics through predictive cognitive response mapping.
         </p>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-12 border-t border-gray-100">
           <div className="flex flex-col gap-1">
             <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400">Prepared Exclusively for</span>
@@ -94,11 +94,11 @@ const Insight: React.FC = () => (
           </p>
           <div className="h-[2px] w-24 bg-primary my-10"></div>
           <p className="text-2xl font-bold text-secondary leading-tight">
-            Predict risk propensity <br/>before the first mile is driven.
+            Predict risk propensity <br />before the first mile is driven.
           </p>
         </div>
       </div>
-      
+
       <div className="reveal flex flex-col gap-6">
         <div className="bg-white p-10 border border-gray-100 shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
           <div className="absolute top-0 right-0 w-1.5 h-full bg-gray-200"></div>
@@ -111,7 +111,7 @@ const Insight: React.FC = () => (
             </div>
           </div>
         </div>
-        
+
         <div className="bg-white p-10 border-2 border-primary shadow-xl relative overflow-hidden group">
           <div className="absolute top-0 right-0 w-1.5 h-full bg-primary"></div>
           <div className="flex items-start gap-6">
@@ -137,7 +137,7 @@ const Product: React.FC = () => (
           A precision instrument for fleet safety and underwriting, delivered with enterprise-grade frictionless integration.
         </p>
       </div>
-      
+
       <div className="grid md:grid-cols-3 gap-0 border border-gray-100 reveal">
         {[
           {
@@ -173,7 +173,7 @@ const ColdStart: React.FC = () => (
   <section className="py-32 px-6 md:px-12 lg:px-24 bg-secondary text-white relative">
     <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-center">
       <div className="reveal">
-        <h2 className="text-h1 mb-8 leading-tight">Cold Start <br/>Intelligence</h2>
+        <h2 className="text-h1 mb-8 leading-tight">Cold Start <br />Intelligence</h2>
         <p className="text-lg opacity-80 mb-10 font-light leading-relaxed">
           Standard telematics suffers from a "cold start" problem—it cannot price risk until data exists. AmbitionProfile creates an immediate risk profile during policy onboarding.
         </p>
@@ -198,13 +198,13 @@ const ColdStart: React.FC = () => (
           </div>
         </div>
       </div>
-      
+
       <div className="reveal bg-white/5 border border-white/10 p-1 rounded-3xl backdrop-blur-md">
         <div className="bg-white rounded-[1.4rem] p-10 text-secondary">
           <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 mb-8">Implementation Timeline</h4>
           <div className="relative space-y-10">
             <div className="absolute left-[19px] top-2 w-[2px] h-[calc(100%-20px)] bg-gray-100"></div>
-            
+
             <div className="relative flex gap-6">
               <div className="w-10 h-10 rounded-full bg-primary border-4 border-white shadow-sm flex items-center justify-center shrink-0 z-10">
                 <span className="text-[10px] font-bold">01</span>
@@ -214,7 +214,7 @@ const ColdStart: React.FC = () => (
                 <p className="text-xs text-gray-500">Post-bind assessment link sent to driver.</p>
               </div>
             </div>
-            
+
             <div className="relative flex gap-6">
               <div className="w-10 h-10 rounded-full bg-gray-100 border-4 border-white shadow-sm flex items-center justify-center shrink-0 z-10">
                 <span className="text-[10px] font-bold">02</span>
@@ -224,7 +224,7 @@ const ColdStart: React.FC = () => (
                 <p className="text-xs text-gray-500">3-minute cognitive performance session.</p>
               </div>
             </div>
-            
+
             <div className="relative flex gap-6">
               <div className="w-10 h-10 rounded-full bg-gray-100 border-4 border-white shadow-sm flex items-center justify-center shrink-0 z-10">
                 <span className="text-[10px] font-bold">03</span>
@@ -248,7 +248,7 @@ const Workflow: React.FC = () => (
         <h2 className="text-h1 mb-4">Enterprise Workflow</h2>
         <p className="text-gray-500 uppercase tracking-widest text-xs font-bold">Seamless Integration into Existing Safety Tech Stacks</p>
       </div>
-      
+
       <div className="grid md:grid-cols-3 gap-12 reveal">
         {[
           { step: "01", label: "ELD/Onboarding", desc: "Drivers receive the assessment link as a core part of their safety equipment setup." },
@@ -297,7 +297,7 @@ const Compliance: React.FC = () => (
     <div className="max-w-5xl mx-auto reveal border-l-4 border-secondary pl-12">
       <div className="flex items-center gap-6 mb-12">
         <ShieldCheck className="text-secondary" size={48} />
-        <h2 className="text-h1">Regulatory & <br/>Compliance Position</h2>
+        <h2 className="text-h1">Regulatory & <br />Compliance Position</h2>
       </div>
       <div className="grid md:grid-cols-2 gap-16">
         <div>
@@ -346,7 +346,7 @@ const Footer: React.FC = () => (
   <footer className="py-20 px-6 md:px-12 lg:px-24 border-t border-gray-100">
     <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-end">
       <div>
-        <BrandLogo className="h-10 mb-8" />
+        <BrandLogo className="h-40 mb-8" />
         <p className="text-xs uppercase tracking-[0.3em] font-bold text-gray-400">Cognitive Risk Intelligence</p>
       </div>
       <div className="md:text-right space-y-4">
