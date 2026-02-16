@@ -47,11 +47,18 @@ const Header: React.FC = () => (
 );
 
 const Hero: React.FC = () => (
-  <section className="pt-40 pb-24 px-6 md:px-12 lg:px-24 bg-white relative">
+  <section className="pt-40 pb-24 px-6 md:px-12 lg:px-24 bg-white relative overflow-hidden">
+    <div className="absolute inset-0 z-0">
+      <img
+        src="/herobgpng1.png"
+        alt="Hero Background"
+        className="w-full h-full object-cover opacity-100"
+      />
+    </div>
     <div className="absolute top-28 right-6 md:right-12 z-10 reveal">
       <GIABadge />
     </div>
-    <div className="max-w-6xl mx-auto reveal">
+    <div className="max-w-6xl mx-auto reveal relative z-10">
       <div className="max-w-4xl">
         <h1 className="text-h0 mb-8 tracking-tight">
           Cognitive Risk <br />
